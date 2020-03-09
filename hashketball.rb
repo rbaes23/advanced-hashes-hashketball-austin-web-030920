@@ -181,6 +181,7 @@ def player_numbers(teams_name)
       end
     end
   end
+  game_hash
 end
 
 
