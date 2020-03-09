@@ -137,7 +137,11 @@ def num_points_scored(players_name)
   end
 end
 
-
+def player_info_hash
+  game_hash.each do |place, team_info|
+    team_info[:players].each do |player_info|
+  end
+end
 
 
 
