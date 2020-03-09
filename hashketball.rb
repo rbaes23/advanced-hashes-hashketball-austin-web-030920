@@ -137,19 +137,19 @@ def num_points_scored(players_name)
   end
 end
 
-def player_info_hash(name, statistic)
-  game_hash.each do |place, team_info|
-    team_info[:players].each do |player_info|
-      if player_info[:player_name] == players_name
-        return player_info[statistic]
-      end
-    end
-  end
-end
+# def player_info_hash(name, statistic)
+#   game_hash.each do |place, team_info|
+#     team_info[:players].each do |player_info|
+#       if player_info[:player_name] == players_name
+#         return player_info[statistic]
+#       end
+#     end
+#   end
+# end
 
 def shoe_size(players_name)
   player_info_hash(players_name, statistic)
-  binding.pry
+  
 end
 
 
