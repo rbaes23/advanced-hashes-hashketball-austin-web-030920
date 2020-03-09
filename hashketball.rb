@@ -147,7 +147,9 @@ def player_info_hash(name, statistic)
   end
 end
 
-
+def shoe_size(players_name)
+  player_info_hash(players_name, statistic)
+end
 
 
 
