@@ -149,6 +149,7 @@ end
 
 def shoe_size(players_name, statistic)
   player_info_hash(players_name, statistic)
+  binding.pry
 end
 
 
