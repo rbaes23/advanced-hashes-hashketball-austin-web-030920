@@ -141,7 +141,9 @@ def player_info_hash(name, statistic)
   game_hash.each do |place, team_info|
     team_info[:players].each do |player_info|
       if player_info[:player_name] == players_name
-        return player_info[
+        return player_info[statistic]
+      end
+    end
   end
 end
 
