@@ -128,7 +128,12 @@ def game_hash
 end
 
 def num_points_scored(players_name)
-  score
+  game_hash.each do |place, team_info|
+    game_hash[:players] do |player_info|
+      binding.pry
+    end
+  end
+  return score
 end
 
 
