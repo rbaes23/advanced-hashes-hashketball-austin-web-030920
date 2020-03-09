@@ -172,11 +172,12 @@ def team_names
 end
 
 def player_numbers(teams_name)
+  new_arr = []
   game_hash.map do |place, team_info|
     if team_info[:team_name] == teams_name
       team_info[:players].each do |key, value|
         if key == :points
-          return value
+          new_arr << value
         end
       end
     end
