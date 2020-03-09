@@ -171,20 +171,6 @@ def team_names
   end
 end
 
-def player_numbers(teams_name)
-  new_arr = []
-  game_hash.map do |place, team_info|
-    if team_info[:team_name] == teams_name
-      team_info[:players].each do |key, value|
-        if key == :points
-          new_arr << value
-        end
-      end
-    end
-  end
-  game_hash
-end
-
 
 def player_numbers(teams_name)
   jersey_nums = []
