@@ -176,7 +176,7 @@ def player_numbers(teams_name)
     if team_info[:team_name] == teams_name
       team_info[:players].each do |key, value|
         if key == :points
-          return game_hash[:place][:players][:points]
+          return value
         end
       end
     end
